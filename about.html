@@ -1,0 +1,230 @@
+<!-- ==================== about.html ==================== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Dr. Md. Akther Uz Zahan Pulok - qualifications, experience, and specializations in homeopathy.">
+    <title>About Dr. Pulok | Homeopathy Specialist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .about-hero {
+            background: linear-gradient(135deg, #2E8B57 0%, #236B43 100%);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        .about-hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+        .about-hero p { font-size: 1.1rem; opacity: 0.9; max-width: 600px; margin: 0 auto; }
+        .bio-section {
+            padding: 4rem 0;
+        }
+        .bio-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        .bio-text h2 { color: var(--primary); margin-bottom: 1rem; }
+        .bio-text p { margin-bottom: 1rem; line-height: 1.8; color: var(--ink-2); }
+        .bio-image img {
+            width: 100%;
+            border-radius: 24px;
+            box-shadow: 0 20px 30px -12px rgba(0,0,0,0.15);
+        }
+        .qualifications {
+            background: var(--gray-light);
+            padding: 4rem 0;
+        }
+        .qual-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+        .qual-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+            transition: all 0.3s;
+        }
+        .qual-card:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
+        .qual-card h3 { color: var(--primary); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+        .qual-card ul { list-style: none; padding-left: 0; }
+        .qual-card li { margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative; }
+        .qual-card li:before { content: "✓"; color: var(--primary); position: absolute; left: 0; font-weight: bold; }
+        .specialties {
+            padding: 4rem 0;
+        }
+        .spec-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .spec-tag {
+            background: var(--accent);
+            color: var(--primary);
+            padding: 0.5rem 1.2rem;
+            border-radius: 40px;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        .spec-tag:hover { background: var(--primary); color: white; transform: translateY(-2px); }
+        .certifications {
+            background: var(--gray-light);
+            padding: 4rem 0;
+        }
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .cert-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            transition: all 0.3s;
+        }
+        .cert-item i { font-size: 2rem; color: var(--primary); }
+        .cert-item p { margin: 0; font-weight: 500; }
+        @media (max-width: 768px) {
+            .bio-grid, .qual-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar sticky-nav">
+        <div class="container nav-container">
+            <div class="logo"><a href="index.html">Dr. Pulok</a></div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="about-hero">
+            <div class="container">
+                <h1>About Dr. Md. Akther Uz Zahan Pulok</h1>
+                <p>Dedicated to the art and science of classical homeopathy</p>
+            </div>
+        </section>
+
+        <section class="bio-section">
+            <div class="container bio-grid">
+                <div class="bio-text">
+                    <h2>Professional Background</h2>
+                    <p>Dr. Md. Akther Uz Zahan Pulok is a highly respected homeopathic physician with over 12 years of clinical experience. He specializes in treating chronic autoimmune disorders, dermatological conditions, respiratory ailments, and psychosomatic diseases through individualized constitutional homeopathy. His approach integrates classical homeopathic philosophy with modern diagnostic understanding, ensuring safe and effective patient care.</p>
+                    <p>Dr. Pulok is known for his empathetic consultation style and a strong commitment to evidence‑based natural medicine. He regularly attends international seminars and continues to advance his knowledge in homeopathic pharmacology and research. His mission is to provide accessible, holistic healthcare that treats the whole person — body, mind, and spirit.</p>
+                </div>
+                <div class="bio-image">
+                    <img src="assets/images/doctor.jpg" alt="Dr. Pulok in consultation">
+                </div>
+            </div>
+        </section>
+
+        <section class="qualifications">
+            <div class="container">
+                <div class="qual-grid">
+                    <div class="qual-card">
+                        <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                        <ul>
+                            <li><strong>Bachelor of Homeopathic Medicine & Surgery (BHMS)</strong> – University of Dhaka</li>
+                            <li><strong>Diploma in Homeopathic Medicine & Surgery (DHMS)</strong> – Government Homeopathic Medical College</li>
+                            <li><strong>Post Graduate Diploma in Homeopathic Pharmacy (PGDPH)</strong> – Bangladesh Agricultural University</li>
+                            <li><strong>Certified in Advanced Clinical Homeopathy</strong> – International Homeopathy Academy, UK</li>
+                            <li><strong>Certificate in Dermatological Homeopathy</strong> – C.I.P., London</li>
+                        </ul>
+                    </div>
+                    <div class="qual-card">
+                        <h3><i class="fas fa-briefcase"></i> Work Experience</h3>
+                        <ul>
+                            <li><strong>Senior Consultant</strong> – Green Life Homeopathy Clinic, Dhaka (2018–present)</li>
+                            <li><strong>Visiting Homeopath</strong> – Bangladesh Health Alliance, Dhaka</li>
+                            <li><strong>Resident Medical Officer</strong> – Central Homeopathy Hospital & Research Center (2012–2017)</li>
+                            <li><strong>Clinical Supervisor</strong> – Homeopathy Training Institute, Dhaka (2015–2018)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="specialties">
+            <div class="container">
+                <h2><i class="fas fa-stethoscope"></i> Core Specializations</h2>
+                <div class="spec-list">
+                    <span class="spec-tag">Autoimmune Disorders</span>
+                    <span class="spec-tag">Chronic Skin Diseases</span>
+                    <span class="spec-tag">Respiratory Allergies</span>
+                    <span class="spec-tag">Hormonal Imbalances</span>
+                    <span class="spec-tag">Pediatric Homeopathy</span>
+                    <span class="spec-tag">Digestive Tract Disorders</span>
+                    <span class="spec-tag">Anxiety & Depression</span>
+                    <span class="spec-tag">Geriatric Care</span>
+                    <span class="spec-tag">Women’s Health</span>
+                    <span class="spec-tag">Migraine & Headaches</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="certifications">
+            <div class="container">
+                <h2><i class="fas fa-certificate"></i> Certifications & Memberships</h2>
+                <div class="cert-grid">
+                    <div class="cert-item"><i class="fas fa-award"></i><p>Fellow of the Academy of Homeopathy (FAH)</p></div>
+                    <div class="cert-item"><i class="fas fa-users"></i><p>Member – Bangladesh Homeopathy Board</p></div>
+                    <div class="cert-item"><i class="fas fa-globe"></i><p>Certified in Homeopathic Dermatology (CIP, London)</p></div>
+                    <div class="cert-item"><i class="fas fa-brain"></i><p>Advanced Course in Mind-Body Homeopathy (Germany)</p></div>
+                    <div class="cert-item"><i class="fas fa-leaf"></i><p>Certified in Clinical Nutrition & Lifestyle Medicine</p></div>
+                    <div class="cert-item"><i class="fas fa-chart-line"></i><p>Research Associate – Homeopathy Research Institute</p></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h3>Dr. Pulok</h3>
+                <p>Homeopathy Specialist<br>Holistic healing for a healthier tomorrow.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li><i class="fas fa-phone-alt"></i> +880 1712-345678</li>
+                    <li><i class="fas fa-envelope"></i> dr.pulok@homeopathyclinic.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Dhanmondi, Dhaka, Bangladesh</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Dr. Md. Akther Uz Zahan Pulok. All rights reserved. Designed with <i class="fas fa-heart"></i> for wellness.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

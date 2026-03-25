@@ -1,0 +1,241 @@
+<!-- ==================== contact.html ==================== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Dr. Md. Akther Uz Zahan Pulok – book appointment, clinic location, and WhatsApp consultation.">
+    <title>Contact | Dr. Pulok Homeopathy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-hero {
+            background: linear-gradient(135deg, #2E8B57 0%, #236B43 100%);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+        .contact-hero h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+        .contact-section {
+            padding: 4rem 0;
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+        .contact-info-card, .contact-form-card {
+            background: white;
+            border-radius: 24px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: all 0.3s;
+        }
+        .contact-info-card:hover, .contact-form-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            padding: 0.8rem;
+            border-radius: 16px;
+            transition: all 0.3s;
+        }
+        .info-item:hover { background: var(--accent); transform: translateX(5px); }
+        .info-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--accent);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-size: 1.2rem;
+        }
+        .info-text h4 { margin-bottom: 0.2rem; color: var(--dark); }
+        .info-text p { color: var(--gray); margin: 0; }
+        .contact-form-card form .form-group {
+            margin-bottom: 1.2rem;
+        }
+        .contact-form-card label {
+            display: block;
+            font-weight: 500;
+            margin-bottom: 0.4rem;
+            color: var(--dark);
+        }
+        .contact-form-card input, .contact-form-card textarea, .contact-form-card select {
+            width: 100%;
+            padding: 0.9rem 1rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            font-family: inherit;
+            transition: all 0.3s;
+        }
+        .contact-form-card input:focus, .contact-form-card textarea:focus, .contact-form-card select:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(46,139,87,0.1);
+        }
+        .submit-btn {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 0.9rem;
+            border-radius: 12px;
+            font-weight: 600;
+            width: 100%;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+        .submit-btn:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 14px rgba(46,139,87,0.3);
+        }
+        .map-section {
+            padding: 2rem 0 4rem;
+            background: var(--gray-light);
+        }
+        .map-container {
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1);
+            margin-top: 1.5rem;
+        }
+        @media (max-width: 768px) {
+            .contact-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar sticky-nav">
+        <div class="container nav-container">
+            <div class="logo"><a href="index.html">Dr. Pulok</a></div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="hamburger"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="contact-hero">
+            <div class="container">
+                <h1>Get In Touch</h1>
+                <p>Schedule an appointment or ask any question — we’re here to help</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container contact-grid">
+                <div class="contact-info-card">
+                    <h2><i class="fas fa-address-card"></i> Contact Details</h2>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div class="info-text">
+                            <h4>Phone / WhatsApp</h4>
+                            <p>+880 1712-345678</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="info-text">
+                            <h4>Email</h4>
+                            <p>dr.pulok@homeopathyclinic.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="info-text">
+                            <h4>Clinic Address</h4>
+                            <p>House #12, Road #5, Dhanmondi R/A, Dhaka - 1205, Bangladesh</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-clock"></i></div>
+                        <div class="info-text">
+                            <h4>Consultation Hours</h4>
+                            <p>Sat–Thu: 5:00 PM – 9:00 PM<br>Fri: Closed</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-card">
+                    <h2><i class="fas fa-pen-alt"></i> Book Appointment</h2>
+                    <form id="appointmentForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="+880XXXXXXXXX">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message / Symptoms *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Briefly describe your health concern or reason for visit..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn"><i class="fab fa-whatsapp"></i> Send & Redirect to WhatsApp</button>
+                    </form>
+                    <p style="font-size: 0.8rem; margin-top: 1rem; color: #666;"><i class="fas fa-lock"></i> Your data is safe. We'll respond within 24 hours.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <div class="container">
+                <h2><i class="fas fa-map"></i> Find Us Here</h2>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.348128497013!2d90.37759531537658!3d23.7529171846184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b3a1b0b0b1%3A0x3b0b0b0b0b0b0b!2sDhanmondi%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1650000000000!5m2!1sen!2sbd" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h3>Dr. Pulok</h3>
+                <p>Homeopathy Specialist<br>Holistic healing for a healthier tomorrow.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li><i class="fas fa-phone-alt"></i> +880 1712-345678</li>
+                    <li><i class="fas fa-envelope"></i> dr.pulok@homeopathyclinic.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Dhanmondi, Dhaka, Bangladesh</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Dr. Md. Akther Uz Zahan Pulok. All rights reserved. Designed with <i class="fas fa-heart"></i> for wellness.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

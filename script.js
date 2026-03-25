@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             
             // WhatsApp number (use international format without '+' or '00')
-            const whatsappNumber = '8801712345678';  // +880 1712-345678
+            const whatsappNumber = '8801711354542';  // +880 1711-354542
             const baseMessage = "Hello Doctor I want an appointment";
             const userDetails = `Name: ${name}%0APhone: ${phone}%0AMessage: ${message}`;
             const fullText = `${baseMessage}%0A%0A${userDetails}`;
